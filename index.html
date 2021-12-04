@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Karen Wu">
+
+        <!-- Personal/Custom: CSS files-->
+        <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Bootstrap: Latest compiled JavaScript + Latest compiled and minified CSS --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Home</title>
+    </head>
+
+    <body>
+        <!--Navigation bar: responsive with bootstrap-->
+        <nav class="navbar navbar-expand-md">
+            <h3> <a class="navbar-brand" href="index.html">KAREN WU</a> </h3>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <h3> <a class="nav-link" href="index.html">HOME</a> </h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3> <a class="nav-link" href="about.html">ABOUT</a> </h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3> <a class="nav-link" href="assets/Wu_Karen_Resume.pdf" target="_blank">RESUME</a> </h3>
+                    </li>
+                </ul>
+            </div>  
+        </nav>    
+        <!-- Background music with controls -->
+        <div class="background">
+            <br><br><br><br><br><br><br><br></b><h1> "Design creates culture. </h1>
+            <h1> Culture shapes values. </h1>
+            <h1> Values detemine the future." </h1><br><br><br><br><br><br><br>
+            <p>There is audio on this page.</p>
+            <audio controls autoplay loop id="page-audio">
+                <source src="assets/music/la campanella.mp3" type="audio/mp3">
+            This audio element is not supported by your browser.
+            </audio> 
+        </div>
+        <!-- Container with detail information  -->
+        <div class="body">
+            <div class="container-fluid">
+                <h4 class="pageTitle-light"> KAREN WU </h4>
+                <p class="intro-light"> Information Systems at Carnegie Mellon University Intended HCI Double Major </p>
+                <p class="intro-light"> Minor in Business and Design</p><br>
+                <!-- Container the three hoverable, featured projects on homepage  -->
+                <div class="row home" id="project-img">
+                    <div class="col-sm home-title">
+                        <p> Culture Kids Cuisine | 2020 </p>
+                        <a class="proj" id="proj-CKC" href="project-CKC.html">
+                            <img src="assets/images/CKC.jpeg" class="img-fluid" alt="Culture Kids Cuisine Logo" height="600" width="600">
+                        </a>
+                    </div>
+                    <div class="col-sm home-title">
+                        <p> LegalSifter Consulting | 2021 </p>
+                        <a class="proj" id="proj-legalsifter" href="project-legalsifter.html">
+                            <img src="assets/images/legalsifter.jpeg" class="img-fluid" alt="Legalsifter Logo" height="600" width="600">
+                        </a>
+                    </div>
+                    <div class="col-sm home-title">
+                        <p> Dive Chat Marketing | 2021 </p>
+                        <a class="proj" id="proj-divechat" href="project-divechat.html">
+                            <img src="assets/images/divechat.jpeg" class="img-fluid" alt="Dive Chat Logo" height="600" width="600">
+                        </a>
+                    </div>
+                </div><bR><br>
+                <div class="row home" id="project-img">
+                    <div class="col-sm home-title">
+                        <p> Bizowie Consulting | 2020 </p>
+                        <a class="proj" id="proj-bizowie" href="project-bizowie.html">
+                            <img src="assets/images/bizowie.png" class="img-fluid" alt="Bizowie Logo" height="600" width="600">
+                        </a>
+                    </div>
+                    <div class="col-sm home-title">
+                        <p> Lutron Display | 2021 </p>
+                        <a class="proj" id="proj-lutron" href="project-lutron.html">
+                            <img src="assets/images/lutron.png" class="img-fluid" alt="Lutron Logo" height="600" width="600">
+                        </a>
+                    </div>
+                    <div class="col-sm home-title">
+                        <p> Blend Homeowners | 2021 </p>
+                        <a class="proj" id="proj-ifocus" href="project-blend.html">
+                            <img src="assets/images/blend.jpeg" class="img-fluid" alt="Blend Logo" height="600" width="600">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-contact">
+                <!-- Structure: 3 columns with music control, contact, and music credits (respectively) -->
+                <div class="container">
+                    <div class="row">
+                        <!-- Contact Information: Email, LinkedIn (respectively)-->
+                        <div class="col-sm">
+                            <a href="mailto:karenwu@andrew.cmu.edu" class="fa fa-envelope"></a>
+                            <a href="https://www.linkedin.com/in/%F0%9F%92%BC-karen-wu-8106a8187/" class="fa fa-linkedin"></a>
+                        </div>
+                        <div class="col-sm" id="song">
+                            <p> Music: La Campanella - Liszt Paganini </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

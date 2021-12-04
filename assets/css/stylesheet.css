@@ -1,0 +1,426 @@
+/* Animation - Make content transition onto page from bottom to top*/
+@keyframes bottom-top {
+    from{ bottom:-100px; opacity:0} 
+    to{ bottom:0 ; opacity:1}
+}
+@-webkit-keyframes bottom-top {
+    from { bottom:-100px; opacity:0} 
+    to { bottom:0px; opacity:1}
+}
+
+/* Navbar */
+/* Customize the navbar background and size*/
+nav {    
+    background: black;
+    height: 50px;
+}
+
+/* Name color */
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar.navbar-expand-md a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Positiioning the navbar so they are not touching the border of the page */
+.navbar-nav.ml-auto {
+    margin-right: 20px;
+}
+
+/* Removing the bullet points */
+.navbar-nav.ml-auto li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* Navbar: styling each page option */
+.navbar-nav.ml-auto li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Styling on the current page's option */
+.navbar-nav.ml-auto .active a {
+    color: white;
+    text-decoration: underline;
+    background: none;
+}
+
+/* Styling on the black background */
+.navbar-nav.ml-auto li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Styling on each page's option when hovered*/
+.navbar-nav.ml-auto li a:hover {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* Positioning the drop down */
+.collapse.navbar-collapse {
+    float: right;
+    position: relative;
+}
+
+/* Shifting the drop down menu pages to the right*/
+.nav-item {
+    text-align: right;
+}
+
+/* Positioning the footer*/
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling the footer*/
+.footer-contact {
+    text-align: center;
+    background-color:black;
+}
+
+/* All pages: Styling the icons in the footer*/
+.footer-contact a {
+    color: white;
+    margin: 30px;
+    font-size: 30px;  
+}
+
+/* All pages: Styling the icons in the footer when hovered over*/
+.footer-contact a:hover {
+    color: white;
+    margin: 30px;
+    font-size: 30px;
+    text-decoration: none;  
+}
+
+/* All pages: Styling + positioning song credits*/
+#song {
+    margin-top: 30px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+.body {
+    background: black;
+}
+
+/* All pages: Clothing Background: adding and styling the actual gif + animation for content*/
+.container-fluid {
+    text-align: center;
+    position: relative;
+    animation-name: bottom-top;
+    animation-duration: 3s;
+    -webkit-animation-name: bottom-top;
+    -webkit-animation-duration: 3s;
+    min-height: 800px;
+    background: black;
+}
+
+.container-fluid {
+    color: white;
+}
+
+/* Positioning the music control*/
+.background {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.background audio{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+/* All pages: The sub-title of pages with dark backgrounds*/
+.intro-light {
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+/* All pages: The sub-title of pages with light backgrounds*/
+.intro {
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* All pages: Title of pages with dark backgrounds*/
+.pageTitle-light {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background: black;
+}
+
+/* Home page: Positioning the container for the different project titles*/
+.titles {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background: black;
+}
+
+/* Positioning each project title*/
+.titles li {
+    list-style: none;
+    width: 33%;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    background: black;
+}
+
+/* Styling each project title before it's hovered*/
+.titles li a {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    background: black;
+}
+
+/* Styling each project title while it's hovered*/
+.titles li a:hover {  
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: line-through;
+    background: black;
+}
+
+/* Default styling of the project images */
+#project-img img {
+    border-radius: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Animation for the glow around image when it's hovered */
+    transition: box-shadow 500ms ease-in-out;
+}
+
+/* Changing the project images' opacities when they are hovered */
+#project-img img:hover {
+    padding: 20px;
+    opacity: 0.6;
+    border: 0.2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    /* Animation for the glow around image when it's hovered */
+    box-shadow: 0px 10px 10px rgb(255, 255, 255);
+}
+
+/* Display's the project title above its respective image */
+.home-title p {
+    text-align: center;
+    display: block; 
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    padding: 3px;
+    width: auto;
+} 
+
+/* Positioning + styling the links that appear when their respective images are shown */
+#project-img a {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    background: black;
+}
+
+/* Styling the photo that is shown */
+#bio-pic {
+    border-radius: 5%;
+    opacity: 0.9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling the text next to and below the bio image */
+.bio-text {  
+    font-size: 18px;
+    color: white;
+    padding-right: 200px;
+}
+
+/* Styling the rotating slideshow */
+.slideshow {
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 500px;
+    box-sizing: border-box;
+    background: black;
+}
+
+/* Widen the rectangle of content to give the transparent tab illusion with the see-through half*/
+.slideshow-content {
+    margin: auto;
+    width: 200px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.slideshow-carousel {
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+    background: black;
+}
+
+.slideshow-carousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.slideshow-carousel figure {
+    width: 100%;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 3px;
+    overflow: hidden;
+    position: absolute;
+}
+.slideshow-carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+}
+.slideshow-carousel figure:nth-child(2) {
+    transform: rotateY(60deg) translateZ(300px);
+}
+.slideshow-carousel figure:nth-child(3) {
+    transform: rotateY(120deg) translateZ(300px);
+}
+.slideshow-carousel figure:nth-child(4) {
+    transform: rotateY(180deg) translateZ(300px);
+}
+.slideshow-carousel figure:nth-child(5) {
+    transform: rotateY(240deg) translateZ(300px);
+}
+.slideshow-carousel figure:nth-child(6) {
+    transform: rotateY(300deg) translateZ(300px);
+}
+
+.slideshow-carousel img {
+    image-rendering: auto;
+    transition: all 150ms;
+    height: 100%;
+}
+
+.slideshow-carousel img:hover {
+    transition: all 150ms;
+}
+
+.slideshow-img:hover {
+    box-shadow: 0px 0px 20px 0px pink;
+}
+
+.slideshow-img {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px white;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Project title and project intro paragraph text styling + positioning*/
+.project-title {
+    text-align: left;
+    color: white;
+} 
+
+.project-intro p { 
+    text-align: left;
+    color: white;
+}
+
+/* Project pages: Styling the project's class & time texts*/
+.proj-class, .proj-time { 
+    text-align: left;
+    color: white;
+    font-weight: 100;
+}
+
+/* Project pages: Positioning the overall intro. section of the page*/
+.project-intro {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+/* Project pages: Styling the h4 headers used in the project intro text and project process texts */
+.project-intro h4, .project-process h4 {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+/* Project pages: Styling the h5 headers used in the project process texts */
+.project-process h5 {
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/* Project pages: Styling the h6 headers used in the project process texts */
+.project-process h6 {  
+    text-align: left;
+    color: white;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+/* Project pages: Styling the project process general texts in paragraphs and lists */
+.project-process p, li {  
+    text-align: left;
+    color: white;
+    padding-top: 5px;
+}
+
+/* Project pages: Styling the project-process containers */
+.row.project-process {
+    padding-bottom: 10px;
+    padding: 3vw;
+}
+
+.proj-logo {
+    height: 20vh;
+}
+
+.next-project {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+}
